@@ -1,0 +1,724 @@
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Parametros Generales --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+$texto--fuente: 'Oswald', sans-serif;
+
+$fondo--color1: rgba(255, 255, 255, .96);
+$fondo--color2: rgba(0, 0, 0, .5);
+$fondo--color3: #361f8a;
+
+$texto-y-fondo--color1: #ffffff;
+$texto-y-fondo--color2: #60342e;
+$texto-y-fondo--color3: #85c7c6;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Parametros Generales --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Boostrap - CSS --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.accordion-body{
+    font-size: 20px;
+    margin: 0 5%;
+}
+.accordion-body strong{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+.accordion-button{
+    background-color: $texto-y-fondo--color2;
+    color: $texto-y-fondo--color1;
+    font-size: 30px;
+    font-weight: bold;
+}
+.accordion-button:hover{
+    background-color: $texto-y-fondo--color3;
+    color: $texto-y-fondo--color2;
+}
+.accordion-button:not(.collapsed) {
+    background-color: $texto-y-fondo--color3 !important;
+    color: $texto-y-fondo--color1 !important;
+}
+.accordion-item{
+    color: $texto-y-fondo--color2;
+}
+
+
+
+.btn-primary,
+.btn-sm,
+.btn-success{
+    background-color: $texto-y-fondo--color1;
+    border: 1px $texto-y-fondo--color2 solid;
+    color: $texto-y-fondo--color2;
+    font-size: 20px;
+}
+.btn-success{
+    font-weight: bold;
+    width: 100%;
+}
+.btn-primary:hover{
+    background-color: $texto-y-fondo--color3;
+    border-color: $texto-y-fondo--color2;
+    color: $texto-y-fondo--color1;
+}
+.btn-sm:hover{
+    background-color: $texto-y-fondo--color3;
+    border-color: $texto-y-fondo--color2;
+    color: $texto-y-fondo--color1;
+}
+.btn-success:hover{
+    background-color: $texto-y-fondo--color3;
+    border-color: $texto-y-fondo--color2;
+    color: $texto-y-fondo--color1;
+}
+
+
+
+.card{
+    background-color: $fondo--color1;
+    border: 1px $texto-y-fondo--color2 solid;
+}
+.card-text img{
+    width: 100%;
+}
+
+
+.carousel-caption h5{
+    color: $texto-y-fondo--color3;
+    font-size: 50px;
+}
+.carousel-caption p{
+    color: $texto-y-fondo--color3;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.fab {
+    padding: 0 10px;
+    color: black;
+}
+
+
+
+.form-check{
+    padding-left: 37px;
+}
+.form-check-input{
+    height: 20px;
+}
+.form-check-label{
+    color: $texto-y-fondo--color2;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-label{
+    color: $texto-y-fondo--color2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:768px){
+    .header__nav{
+        display: none !important;
+    }
+}
+@media only screen and (min-width:769px){
+    .header__article{
+        display: none;
+    }
+}
+
+
+.bg-dark{
+    background-color: #60342e !important;
+}
+.navbar-toggler{
+    background-color: #60342e;
+    border-color: #85c7c6;
+}
+.navbar-toggler:hover{
+    background-color: #85c7c6;
+    border-color: #60342e;
+}
+.text-white a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.titulo-publicidad{
+    background-color: $fondo--color3;
+    color: $texto-y-fondo--color1;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Boostrap - CSS --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Página 404 Personalizada --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main--404{
+    align-items: center;
+    background-color: $texto-y-fondo--color1;
+    background-image: url(../img/404-helado-derretido.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 1px $texto-y-fondo--color1 solid;
+    display: flex;
+    height: 625px;
+    justify-content: center;
+    width: 100%;
+}
+
+.main__section__article--404{
+    color: $texto-y-fondo--color2;
+    font-weight: bold;
+    padding: 10% 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Página 404 Personalizada --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- CSS en común --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+    background-color: $texto-y-fondo--color1;
+    font-family: $texto--fuente;
+}
+/*-------------------------------------------------- Header --------------------------------------------------*/
+.header{
+    background-color: $texto-y-fondo--color1;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header__nav{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+.header__nav__a{
+    width: 12.5%;
+}
+.header__nav__a__img{
+    width: 100%;
+}
+.header__nav__ul{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 20px;
+    justify-content: flex-end;
+    list-style: none;
+    width: 70%;
+}
+.header__nav__ul__li{
+    padding-left: 38px;
+}
+.header__nav__ul__li__a{
+    color: $texto-y-fondo--color2;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header__nav__ul__li__a:hover{
+    color: $texto-y-fondo--color3;
+}
+/*-------------------------------------------------- Header --------------------------------------------------*/
+/*-------------------------------------------------- Main --------------------------------------------------*/
+.main{
+    background-color: $texto-y-fondo--color1;
+    background-image: url(../img/fondo-patron-helado.jpg);
+    border: 1px $texto-y-fondo--color1 solid;
+    padding-top: 8.2%;
+    width: 100%;
+}
+
+
+
+.main__section--index,
+.main__section--la-ruta,
+.main__section--la-historia,
+.main__section--noticias,
+.main__section--quienes-somos{
+    border-top: 10px $texto-y-fondo--color2 solid;
+    border-bottom: 10px $texto-y-fondo--color2 solid;
+    background-color: $fondo--color1;
+    color: $texto-y-fondo--color2;
+    height: 100%;
+    padding: 1.25%;
+    width: 100%;
+}
+.main__section--index,
+.main__section--la-ruta{
+    position: relative;
+    z-index: 2;
+}
+.main__section--noticias,
+.main__section--quienes-somos{
+    margin-bottom: 5%;
+}
+
+.main__section--curiosidades,
+.main__section--link-a-ruta{
+    background-position: center center;
+    border: 1px $texto-y-fondo--color1 solid;
+    height: 100%;
+    margin: 2.5% 13% 5%;
+    padding: 2.5 0%;
+    width: 74%;
+}
+.main__section--curiosidades{
+    background-image: url(../img/fondo-seccion-curiosidades.gif);
+}
+
+.main__section--carrusel,
+.main__section--heladerias-de-la-ruta{
+    width: 80%;
+}
+
+
+
+.main__section__h1--index,
+.main__section__h1--la-ruta,
+.main__section__h1--la-historia,
+.main__section__h1--noticias,
+.main__section__h1--quienes-somos{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.main__section__h2--noticias-en-index,
+.main__section__h2--medios-de-contacto{
+    background-color: $texto-y-fondo--color2;
+    color: $texto-y-fondo--color1;
+    font-size: 50px;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    padding: 1.25%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.main__section__h2--info-de-la-historia,
+.main__section__h2--info-sobre-quienes-somos,
+.main__section__h2--ultimas-noticias{
+    font-weight: bold;
+    height: 100%;
+    margin: 0 10%;
+    padding: 1.25%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+}
+.main__section__h2--info-de-la-historia,
+.main__section__h2--info-sobre-quienes-somos{
+    background-color: $texto-y-fondo--color3;
+    color: $texto-y-fondo--color1;
+    font-size: 50px;
+}
+.main__section__h2--link-a-ruta,
+.main__section__h2--curiosidades{
+    background-color: $fondo--color2;
+    margin: 2.5% 0;
+    padding: 1.25%;
+    text-align: center;
+}
+.main__section__h2--curiosidades{
+    color: $texto-y-fondo--color1;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+
+.main__section__h3--la-ruta,
+.main__section__h3--la-historia,
+.main__section__h3--noticias{
+    font-size: 30px;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+
+
+.main__section__h4--info-de-la-historia,
+.main__section__h4--ultimas-noticias{
+    border-bottom: 1px $texto-y-fondo--color2 solid;
+    height: 100%;
+    margin: 0 10%;
+    padding: 1.25%;
+    width: 80%;
+}
+
+
+
+.main__section__article--datos-de-contacto,
+.main__section__article--formulario-de-contacto,
+.main__section__article--info-de-la-historia,
+.main__section__article--info-de-la-historia-con-poco-texto,
+.main__section__article--info-de-la-historia-moderna,
+.main__section__article--info-sobre-quienes-somos,
+.main__section__article--ultimas-noticias{
+    background-color: $fondo--color1;
+}
+.main__section__article--info-de-la-historia,
+.main__section__article--info-de-la-historia-moderna,
+.main__section__article--info-sobre-quienes-somos,
+.main__section__article--ultimas-noticias{
+    border-top: 1px $texto-y-fondo--color2 solid;
+}
+.main__section__article--info-de-la-historia,
+.main__section__article--info-sobre-quienes-somos,
+.main__section__article--ultimas-noticias{
+    margin: 0 10% 5%;
+}
+.main__section__article--info-de-la-historia,
+.main__section__article--info-sobre-quienes-somos{
+    border: 2px $texto-y-fondo--color2 solid;
+}
+
+
+
+.main__section__article__iframe--mapa-de-la-ruta,
+.main__section__article__iframe--video-de-la-historia{
+    margin: 0 10% 1%;
+    width: 80%;
+}
+
+
+
+.main__section__article__img--info-de-la-historia,
+.main__section__article__img--info-sobre-quienes-somos,
+.main__section__article__img--ultimas-noticias{
+    display: inline;
+}
+.main__section__article__img--info-de-la-historia,
+.main__section__article__img--info-de-la-historia-con-poco-texto{
+    border: 2px $texto-y-fondo--color2 solid;
+    height: 37.5%;
+    width: 37.5%;
+}
+.main__section__article__img--info-de-la-historia,
+.main__section__article__img--ultimas-noticias{
+    float: left;
+}
+.main__section__article__img--info-de-la-historia-con-poco-texto,
+.main__section__article__img--ultimas-noticias{
+    margin: 2.5%;
+}
+.main__section__article__img--info-sobre-quienes-somos,
+.main__section__article__img--ultimas-noticias{
+    height: 37.5%;
+    width: 37.5%;
+}
+
+
+
+.main__section__article__p--info-de-la-historia,
+.main__section__article__p--info-sobre-quienes-somos,
+.main__section__article__p--ultimas-noticias{
+    padding-top: 2.5%;
+}
+
+
+
+.main__section__article__p__span--info-de-la-historia,
+.main__section__article__p__span--info-sobre-quienes-somos,
+.main__section__article__p__span--ultimas-noticias{
+    display: block;
+    color: $texto-y-fondo--color2;
+    padding: 0.5% 2.5%;
+    text-align: justify;
+}
+.main__section__article__p__span--info-de-la-historia,
+.main__section__article__p__span--ultimas-noticias{
+    font-size: 20px;
+}
+
+
+
+
+
+/*-------------------------------------------------- Main --------------------------------------------------*/
+/*-------------------------------------------------- Footer --------------------------------------------------*/
+.footer{
+    background-color: $texto-y-fondo--color1;
+    padding: 1.25%;
+    width: 100%;
+}
+.footer__h6{
+    color: $texto-y-fondo--color2;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/*-------------------------------------------------- Footer --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- CSS en común --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Index --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main__section--carrusel{
+    height: 100%;
+    margin: 0 10% 1%;
+}
+.main__section--cartas-de-noticias{
+    margin: 1% 0;
+    padding: 1% 0;
+}
+.main__section--link-a-ruta{
+    background-image: url(../img/fondo-link-a-ruta.gif);
+}
+
+
+
+.main__section__h2__a--link-a-ruta{
+    color: $texto-y-fondo--color1;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main__section__h2__a--link-a-ruta:hover{
+    color: $texto-y-fondo--color1;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Index --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Ruta --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main__section--heladerias-de-la-ruta{
+    margin: -53px 10% 5%;
+    padding-top: 1%;
+}
+
+
+
+.main__section__article__iframe--mapa-de-la-ruta{
+    bottom: 53px;
+    height: 553px;
+    position: relative;
+    z-index: 1;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Ruta --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Historia --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main__section__h2--info-de-la-historia{
+    border-left: 2px $texto-y-fondo--color2 solid;
+    border-right: 2px $texto-y-fondo--color2 solid;
+    border-top: 2px $texto-y-fondo--color2 solid;
+}
+
+
+
+.main__section__h4--info-de-la-historia{
+    background-color: $texto-y-fondo--color3;
+    border-left: 2px $texto-y-fondo--color2 solid;
+    border-right: 2px $texto-y-fondo--color2 solid;
+    color: $texto-y-fondo--color1;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.main__section__article--info-de-la-historia-con-poco-texto,
+.main__section__article--info-de-la-historia-moderna,
+.main__section__article--subtitulo-info-de-la-historia{
+    border-bottom: 1px $texto-y-fondo--color2 solid;
+    border-left: 2px $texto-y-fondo--color2 solid;
+    border-right: 2px $texto-y-fondo--color2 solid;
+    margin: 0 10%;
+}
+.main__section__article--info-de-la-historia-con-poco-texto,
+.main__section__article--subtitulo-info-de-la-historia{
+    height: 100%;
+    width: 80%;
+}
+.main__section__article--info-de-la-historia-con-poco-texto{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 80%;
+}
+.main__section__article--subtitulo-info-de-la-historia{
+    background-image: url(../img/fondo-patron-helado-dos.jpg);
+    background-repeat: repeat;
+    border-top: 2px $texto-y-fondo--color2 solid;
+}
+
+
+
+.main__section__article__iframe--video-de-la-historia{
+    height: 500px;
+}
+
+
+
+.main__section__article__img--info-de-la-historia{
+    margin: 2.5% 2.5% 0;
+}
+
+
+
+.main__section__article__h3--subtitulo-info-de-la-historia{
+    background-color: $fondo--color2;
+    color: $texto-y-fondo--color1;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 2.5% 0;
+    padding: 1.25%;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Historia --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Noticias --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main__section__h2--ultimas-noticias{
+    background-color: $fondo--color1;
+    border-top: 5px $texto-y-fondo--color2 solid;
+    border-bottom: 2px $texto-y-fondo--color2 solid;
+    color: $texto-y-fondo--color2;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+
+.main__section__h4--ultimas-noticias{
+    background-color: $fondo--color1;
+    border-top: 1px $texto-y-fondo--color2 solid;
+    color: $texto-y-fondo--color2;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+.main__section__article--ultimas-noticias{
+    border-bottom: 2px $texto-y-fondo--color2 solid;
+}
+
+
+
+.main__section__article__p--ultimas-noticias{
+    display: inline;
+}
+
+
+
+.main__section__article__a--ultimas-noticias{
+    font-size: 20px;
+    padding: 2.5% 2.5% 0;
+    text-align: left;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Noticias --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Contacto --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main__section--datos-de-contacto{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 10%;
+}
+
+
+
+.main__section__h2--info-sobre-quienes-somos{
+    border: 2px $texto-y-fondo--color2 solid;
+    border-bottom: 1px $texto-y-fondo--color2 solid;
+}
+
+
+
+.main__section__article--datos-de-contacto,
+.main__section__article--formulario-de-contacto{
+    border-left: 1px $texto-y-fondo--color2 solid;
+    border-right: 1px $texto-y-fondo--color2 solid;
+    padding: 2.5%;
+    width: 45%;
+}
+.main__section__article--datos-de-contacto{
+    margin-right: 5%;
+}
+.main__section__article--formulario-de-contacto{
+    margin-left: 5%;
+}
+
+
+
+.main__section__article__h4--datos-de-contacto,
+.main__section__article__h5--datos-de-contacto{
+    color: $texto-y-fondo--color2;
+}
+.main__section__article__h4--datos-de-contacto{
+    font-size: 30px;
+    font-weight: bold;
+}
+.main__section__article__h5--datos-de-contacto{
+    font-size: 22.5px;
+    font-weight: normal;
+}
+
+
+
+.main__section__article__img--info-sobre-quienes-somos{
+    float: right;
+    margin-left: 2.5%;
+}
+
+
+
+.main__section__article__p__span--info-sobre-quienes-somos{
+    font-size: 25px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- Contacto --------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
